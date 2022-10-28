@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Cycle De Mountain - 1",
+    "price": 1700,
+    "id": 1,
+    "img": "/img/img (1).jpg"
+  },
+  {
+    "name": "Cycle De Mountain - 2",
+    "price": 2500,
+    "id": 2,
+    "img": "/img/img (2).jpg"
+  },
+  {
+    "name": "Cycle De Mountain - 3",
+    "price": 2700,
+    "id": 3,
+    "img": "/img/img (3).jpg"
+  },
+  {
+    "name": "Cycle De Mountain - 4",
+    "price": 1600,
+    "id": 4,
+    "img": "/img/img (4).jpg"
+  },
+  {
+    "name": "Cycle De Mountain - 5",
+    "price": 3500,
+    "id": 5,
+    "img": "/img/img (5).jpg"
+  },
+  {
+    "name": "Cycle De Mountain - 6",
+    "price": 4500,
+    "id": 6,
+    "img": "/img/img (6).jpg"
+  },
+  {
+    "name": "Cycle De Mountain - 7",
+    "price": 5500,
+    "id": 7,
+    "img": "/img/img (7).jpg"
+  },
+  {
+    "name": "Cycle De Mountain - 8",
+    "price": 3700,
+    "id": 8,
+    "img": "/img/img (8).jpg"
+  },
+  {
+    "name": "Cycle De Mountain - 9",
+    "price": 6500,
+    "id": 9,
+    "img": "/img/img (9).jpg"
+  },
+  {
+    "name": "Cycle De Mountain - 10",
+    "price": 1500,
+    "id": 10,
+    "img": "/img/img (10).jpg"
+  }
+]

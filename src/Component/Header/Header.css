@@ -14,10 +14,12 @@
 }
 
 .left-side{
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.left-side span, .left-side h2{
+    color: white;
 }
 .left-side span{
     margin-right:20px ;
