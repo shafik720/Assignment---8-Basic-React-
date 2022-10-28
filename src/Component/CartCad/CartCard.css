@@ -1,4 +1,23 @@
 
+
+
+
+
+.cart-card{
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid darkblue;
+    margin-top: 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.cart-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .cart-img img{
     width: 60px;
 }

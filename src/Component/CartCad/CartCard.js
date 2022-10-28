@@ -1,5 +1,7 @@
 import React from 'react';
-import './CartCard.css'
+import './CartCard.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
 const CartCard = (props) => {
     const{name, price, quantity, img} = props.index;
@@ -14,7 +16,10 @@ const CartCard = (props) => {
                     <p>{quantity}</p>
                 </div>
             </div>
-            <div className="cart-right"></div>
+            <div className="cart-right">
+                <span><FontAwesomeIcon icon={faPlus} /></span>
+                <span><FontAwesomeIcon icon={faMinus} /></span>
+            </div>
         </div>
     );
 };
