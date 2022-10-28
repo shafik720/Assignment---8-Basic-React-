@@ -12,7 +12,7 @@ const CartCard = (props) => {
                     <img src={img} alt=""/>
                 </div>
                 <div className="cart-details">
-                    <p>Price : ${price}</p>
+                    <p>Price : ${price * quantity}</p>
                     <p>Quantity : {quantity}</p>
                 </div>
             </div>
