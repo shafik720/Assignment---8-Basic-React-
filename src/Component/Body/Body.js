@@ -4,12 +4,17 @@ import Products from '../Products/Products';
 import './Body.css'
 
 const Body = () => {
+
+    //---------------------------------------------- fetching data from api 
     const[products, setProducts] = useState([]);
     useEffect(()=>{
         fetch('cycle.json')
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])
+
+    //---------------------------------------------- saving data to local storage
+
     return (
         <div className="body-div">
             <div className="left-side">
