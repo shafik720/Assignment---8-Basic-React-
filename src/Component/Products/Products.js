@@ -4,7 +4,6 @@ import './Products.css'
 const Products = (props) => {
     
     const {name, id, price, img}  = props.index;
-    console.log(name);
     return (
         <div className="cardx">
             <div className="card-img">
@@ -15,7 +14,7 @@ const Products = (props) => {
                     <h4>{name}</h4>
                     <p>Price : <span className="price">${price}</span>  </p>
                 </div>
-                <div draggable className="body-right">
+                <div onClick={()=>props.addToCart(props.index)} draggable className="body-right">
                     <h3>Add To Cart</h3>
                 </div>
             </div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { addToDb } from '../../Utilites/storage';
 import Cart from '../Cart/Cart';
 import Products from '../Products/Products';
 import './Body.css'
@@ -14,6 +15,12 @@ const Body = () => {
     },[])
 
     //---------------------------------------------- saving data to local storage
+    function addToCart(element){
+        addToDb(element.id);        
+    }
+
+    //---------------------------------------------- getting data from local storage
+    
 
     return (
         <div className="body-div">
@@ -22,6 +29,7 @@ const Body = () => {
                 products.map(index=><Products
                     index={index}
                     key = {index.id}
+                    addToCart = {addToCart}
                 ></Products>)
             }
             </div>
