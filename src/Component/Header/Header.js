@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserTie } from '@fortawesome/free-solid-svg-icons';
+import { faPersonBiking } from '@fortawesome/free-solid-svg-icons';
 
 
 const Header = () => {
@@ -9,8 +9,8 @@ const Header = () => {
         <div className="header-divs">
             <div className="header-div">
                 <div className="left-sides">
-                    <span className="icon"><FontAwesomeIcon icon={faUserTie} /></span>
-                    <h2>Gentelmen's Cart</h2>
+                    <span className="icon"><FontAwesomeIcon icon={faPersonBiking} /></span>
+                    <h2>Gentelmen's Ride</h2>
                 </div>
                 <div className="right-side">
                     <a href="/home">Home</a>
