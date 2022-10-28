@@ -5,7 +5,7 @@
     color: black;
     border: 5px solid darkslategrey;
     border-radius:7px;
-    padding: 15px ;
+    padding: 15px 5px;
     margin: 40px;
 }
 
@@ -16,4 +16,38 @@
 }
 .cardx img{
     width: 100%;
+}
+
+
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gold;
+    padding: 15px 10px;
+    border-radius: 5px ;
+}
+.body-left h4{
+    margin: 0;
+    padding: 0;
+    color: #2a2a2a;
+    font-weight: 600;
+    font-size: 18px;
+}
+.body-left p{
+    margin: 0;
+    padding-top: 10px;
+}
+
+.body-right{
+    background-color: #2a2a2a;
+    padding: 13px 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.body-right h3{
+    margin:  0;
+    font-size: 15px;
 }

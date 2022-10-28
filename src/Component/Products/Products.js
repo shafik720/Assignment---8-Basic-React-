@@ -15,7 +15,9 @@ const Products = (props) => {
                     <h4>{name}</h4>
                     <p>Price : ${price} </p>
                 </div>
-                <div className="body-right"></div>
+                <div draggable className="body-right">
+                    <h3>Add To Cart</h3>
+                </div>
             </div>
         </div>
     );
