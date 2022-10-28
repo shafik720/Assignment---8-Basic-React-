@@ -19,6 +19,12 @@
 }
 
 
+.cart-details{
+    margin-left: 15px;
+}
+.cart-details p{
+    font-weight: 600;
+}
 .cart-right{
     display: flex;
     flex-direction: column;

@@ -12,8 +12,8 @@ const CartCard = (props) => {
                     <img src={img} alt=""/>
                 </div>
                 <div className="cart-details">
-                    <p>{price}</p>
-                    <p>{quantity}</p>
+                    <p>Price : ${price}</p>
+                    <p>Quantity : {quantity}</p>
                 </div>
             </div>
             <div className="cart-right">
