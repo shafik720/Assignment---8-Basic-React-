@@ -33,6 +33,7 @@
 }
 .cart-right span{
     display: block;
+    cursor: pointer;
 }
 
 .cart-img img{
