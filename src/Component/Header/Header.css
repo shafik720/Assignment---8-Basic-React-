@@ -45,3 +45,19 @@
 .right-side a:hover{
     color: orangered;
 }
+
+
+@media only screen and (max-width:680px){
+    .header-div{
+        background-color: #2A2A2A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 10px;
+        width: 100%;
+        
+    }
+    .right-side{
+        display: none;
+    }
+}
