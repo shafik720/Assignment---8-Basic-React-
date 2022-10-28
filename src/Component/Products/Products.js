@@ -13,7 +13,7 @@ const Products = (props) => {
             <div className="card-body">
                 <div className="body-left">
                     <h4>{name}</h4>
-                    <p>Price : ${price} </p>
+                    <p>Price : <span className="price">${price}</span>  </p>
                 </div>
                 <div draggable className="body-right">
                     <h3>Add To Cart</h3>
