@@ -1,4 +1,5 @@
 import React from 'react';
+import CartCard from '../CartCad/CartCard';
 import './Cart.css'
 
 const Cart = (props) => {
@@ -30,7 +31,10 @@ const Cart = (props) => {
             </div>
             <div className="show-div">
                 {
-                    cart.map(index=>)
+                    cart.map(index=><CartCard
+                        index = {index}
+                        key = {index.id}
+                    ></CartCard>)
                 }
             </div>
         </div>
