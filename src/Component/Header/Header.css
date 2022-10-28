@@ -8,6 +8,26 @@
     padding: 15px 60px;
 }
 
+.left-side{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-side span{
+    margin-right:20px ;
+    display: block;
+    border: 3px solid tomato;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+}
+
 .right-side a{
     text-decoration: none;
     color: white;
