@@ -35,9 +35,8 @@ const Body = () => {
                 newCart.push(addedProduct);                
             }
             setCart(newCart);
-            console.log(cart)
         }
-    },[products])
+    },[products, added])
 
     return (
         <div className="body-div">
@@ -51,7 +50,7 @@ const Body = () => {
             }
             </div>
             <div className="right-side">
-                <Cart></Cart>
+                <Cart cart={cart}></Cart>
             </div>
             
             
