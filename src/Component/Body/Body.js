@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { addToDb } from '../../Utilites/storage';
+import { addToDb, getCartValue } from '../../Utilites/storage';
 import Cart from '../Cart/Cart';
 import Products from '../Products/Products';
 import './Body.css'
@@ -15,12 +15,29 @@ const Body = () => {
     },[])
 
     //---------------------------------------------- saving data to local storage
+    let [added, setAdded] = useState([]);
     function addToCart(element){
+        let freshCart = [];
         addToDb(element.id);        
+        freshCart.push(element);
+        setAdded(freshCart);
     }
 
     //---------------------------------------------- getting data from local storage
-    
+    let [cart, setCart] = useState([]);
+    useEffect(()=>{
+        let storedCart = getCartValue();
+        let newCart = [];
+        for(let id in storedCart){
+            let addedProduct = products.find(index=> index.id == id);
+            if(addedProduct){
+                addedProduct.quantity = storedCart[id];
+                newCart.push(addedProduct);                
+            }
+            setCart(newCart);
+            console.log(cart)
+        }
+    },[products])
 
     return (
         <div className="body-div">
