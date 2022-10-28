@@ -1,0 +1,20 @@
+
+
+.header-div{
+    background-color: #2A2A2A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px;
+}
+
+.right-side a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.right-side a:hover{
+    color: orangered;
+}

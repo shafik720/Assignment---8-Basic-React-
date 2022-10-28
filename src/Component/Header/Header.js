@@ -3,8 +3,17 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div>
-            <h2>Hello From Header</h2>
+        <div className="header-div">
+            <div className="left-side">
+
+            </div>
+            <div className="right-side">
+                <a href="/home">Home</a>
+                <a href="/home">About</a>
+                <a href="/home">Contact</a>
+                <a href="/home">Menu</a>
+                <a href="/home">Shop</a>
+            </div>
         </div>
     );
 };
