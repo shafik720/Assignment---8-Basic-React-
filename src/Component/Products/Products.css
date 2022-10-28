@@ -56,3 +56,13 @@
     margin:  0;
     font-size: 15px;
 }
+
+
+
+
+
+@media only screen and (max-width:680px){
+    .cardx{
+        margin: 10px;
+    }
+}
