@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
 const CartCard = (props) => {
-    const{name, price, quantity, img} = props.index;
+    const{id, price, quantity, img} = props.index;
     return (
         <div className="cart-card">
             <div className="cart-left">
@@ -17,8 +17,8 @@ const CartCard = (props) => {
                 </div>
             </div>
             <div className="cart-right">
-                <span><FontAwesomeIcon icon={faPlus} /></span>
-                <span><FontAwesomeIcon icon={faMinus} /></span>
+                <span onClick={()=>props.addToCart(props.index)} draggable><FontAwesomeIcon icon={faPlus} /></span>
+                <span draggable><FontAwesomeIcon icon={faMinus} /></span>
             </div>
         </div>
     );

@@ -4,6 +4,7 @@ import './Cart.css'
 
 const Cart = (props) => {
     let cart = props.cart;
+    let addToCart = props.addToCart;
     let quantity = 0;
     let totalPrice = 0;
     let shippingFee = 0;
@@ -34,6 +35,7 @@ const Cart = (props) => {
                     cart.map(index=><CartCard
                         index = {index}
                         key = {index.id}
+                        addToCart = {addToCart}
                     ></CartCard>)
                 }
             </div>

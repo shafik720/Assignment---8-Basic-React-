@@ -50,7 +50,10 @@ const Body = () => {
             }
             </div>
             <div className="right-side">
-                <Cart cart={cart}></Cart>
+                <Cart 
+                cart={cart}
+                addToCart = {addToCart}
+                ></Cart>
             </div>
             
             
