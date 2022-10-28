@@ -1,11 +1,16 @@
 
 
+.header-divs{
+    background-color: #2A2A2A;
+}
 .header-div{
     background-color: #2A2A2A;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 60px;
+    width: 80%;
+    margin: auto;
 }
 
 .left-side{
