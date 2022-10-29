@@ -4,3 +4,18 @@
     position: sticky;
     top: 0;
 }
+
+
+.random-chooser button{
+    margin: auto;
+    height: 50px;
+    width: 90%;
+    outline: none;
+    border: none;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}

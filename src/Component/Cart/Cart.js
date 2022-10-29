@@ -24,34 +24,12 @@ const Cart = (props) => {
     grandTotal += (totalPrice + tax + shippingFee);
 
     // working for random card selection
-    let products = props.products;
-    // let random = Math.floor(Math.random() * 10);
+    // let products = props.products;
+    let random = Math.floor(Math.random() * cart.length);
     
-    let box = [];
-    function generateRandom(){
-        for(let i=0; i<4;i++){        
-            let random = Math.floor(Math.random() * 10);
-            if(!box.indexOf(random) === -1){
-                return generateRandom();
-            }else if(box.indexOf(random) === -1){
-                if(box.length <4){
-                    box.push(random);
-                    return generateRandom();
-                }                
-            }
-        }
-        if(box.length !== 4){            
-            return generateRandom();
-        } 
-        return box;
-    }
-    let x = generateRandom();
-    let box2 = [];
-    for(let i=0; i<x.length; i++){
-        // box2.push(products[box[i]])
-        console.log(products[box[i]])
-    }
-    // console.log(box2)
+    // let box = [];
+    console.log(cart[random]);
+
     
     
     
@@ -64,6 +42,9 @@ const Cart = (props) => {
                 <p>Tax : ${tax}</p>
                 <p>Shipping Charge : ${shippingFee}</p>
                 <h2>Grand Total : ${grandTotal} </h2>
+            </div>
+            <div className="random-chooser">
+                <button>Choose 1 For Me</button>
             </div>
             <div className="show-div">
                 {
