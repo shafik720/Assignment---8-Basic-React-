@@ -37,6 +37,7 @@ const Cart = (props) => {
         let modalBody = document.querySelector('.modal-body');
         modalBody.innerHTML = `
             <h2>${randomized.name}</h2> 
+            <h3>$${randomized.price}</h3>
             <img src="${randomized.img}" alt=""/> 
         `;
 
