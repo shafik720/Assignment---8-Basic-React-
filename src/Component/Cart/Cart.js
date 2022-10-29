@@ -25,10 +25,9 @@ const Cart = (props) => {
     tax = (totalPrice * 0.1);
     grandTotal += (totalPrice + tax + shippingFee);
 
-    // working for random card selection    
+    //---------------------------- working for random card selection    
     let random = 0;
     let randomized ;
-    // console.log(cart[random]);
 
     function openModal(){
         random = Math.floor(Math.random() * cart.length);
@@ -48,6 +47,12 @@ const Cart = (props) => {
         })
     }
 
+    function choseAgain(){        
+        let modalParent = document.querySelector('.modal-parent');
+        modalParent.classList.remove('active');
+        openModal();
+    }
+
     
     
     
@@ -57,7 +62,7 @@ const Cart = (props) => {
                 <div className="modal">
                     <div className="modal-body">                        
                     </div>
-                    <button>Choose Again</button>
+                    <button onClick={choseAgain}>Choose Again</button>
                     <div className="cross-icon">
                         <FontAwesomeIcon icon={faXmark} />
                     </div>
