@@ -25,12 +25,14 @@ const Cart = (props) => {
     tax = (totalPrice * 0.1);
     grandTotal += (totalPrice + tax + shippingFee);
 
-    // working for random card selection
-    let random = Math.floor(Math.random() * cart.length);
-    let randomized = cart[random];
+    // working for random card selection    
+    let random = 0;
+    let randomized ;
     // console.log(cart[random]);
 
     function openModal(){
+        random = Math.floor(Math.random() * cart.length);
+        randomized = cart[random];
         let modalParent = document.querySelector('.modal-parent');
         let modalBody = document.querySelector('.modal-body');
         modalBody.innerHTML = `
