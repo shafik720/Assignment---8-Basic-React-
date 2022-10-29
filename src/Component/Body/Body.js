@@ -55,7 +55,7 @@ const Body = () => {
         <div className="">
             <div className="greetings">
                 <h1>Welcome to Dragon's Ride</h1>
-                <h1>Start Riding <span><FontAwesomeIcon icon={faPersonBiking} /></span> instead of Riding <FontAwesomeIcon icon={faDragon} /> </h1>
+                <h1>Start Riding <span className="header-icon"><FontAwesomeIcon icon={faPersonBiking} /></span> instead of Riding <span className="header-icon"><FontAwesomeIcon icon={faDragon} /></span>  </h1>
             </div>
             <div className="body-div">
                 <div className="left-side">
