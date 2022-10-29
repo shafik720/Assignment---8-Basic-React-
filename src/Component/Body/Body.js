@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { addToDb, getCartValue } from '../../Utilites/storage';
+import { addToDb, decreaseDb, getCartValue } from '../../Utilites/storage';
 import Cart from '../Cart/Cart';
 import Products from '../Products/Products';
 import './Body.css'
@@ -38,9 +38,10 @@ const Body = () => {
         }
     },[products, added])
 
-    //---------------------------------------------- decrease value from localstorage
+    //---------------------------------------------- decrease value from localstorage    
     function decreaseCart(element){
         console.log(element);
+        decreaseDb(element.id);
     }
 
     return (
