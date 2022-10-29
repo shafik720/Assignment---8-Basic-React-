@@ -38,6 +38,11 @@ const Body = () => {
         }
     },[products, added])
 
+    //---------------------------------------------- decrease value from localstorage
+    function decreaseCart(element){
+        console.log(element);
+    }
+
     return (
         <div className="body-div">
             <div className="left-side">
@@ -53,6 +58,7 @@ const Body = () => {
                 <Cart 
                 cart={cart}
                 addToCart = {addToCart}
+                decreaseCart = {decreaseCart}
                 ></Cart>
             </div>
             

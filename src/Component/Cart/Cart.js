@@ -5,6 +5,8 @@ import './Cart.css'
 const Cart = (props) => {
     let cart = props.cart;
     let addToCart = props.addToCart;
+    let decreaseCart = props.decreaseCart;
+
     let quantity = 0;
     let totalPrice = 0;
     let shippingFee = 0;
@@ -36,6 +38,7 @@ const Cart = (props) => {
                         index = {index}
                         key = {index.id}
                         addToCart = {addToCart}
+                        decreaseCart = {decreaseCart}
                     ></CartCard>)
                 }
             </div>

@@ -15,10 +15,21 @@ function getCartValue(){
     return cycleCart;
 }
 
+function decreaseDb(id){
+    let cycleCart = JSON.parse(localStorage.getItem('cycle-cart') || "{}");
+    if(cycleCart[id]>0){
+        cycleCart[id] = cycleCart[id] - 1;
+    }else if(cycleCart[id] <=0){
+        let prop = id;
+        delete cycleCart[prop];
+    }
+    localStorage.setItem('cycle-cart', JSON.stringify(cycleCart));
+}
 
 
 
 export{
     addToDb,
+    decreaseDb,
     getCartValue
 }

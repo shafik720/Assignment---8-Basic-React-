@@ -18,7 +18,7 @@ const CartCard = (props) => {
             </div>
             <div className="cart-right">
                 <span onClick={()=>props.addToCart(props.index)} draggable><FontAwesomeIcon icon={faPlus} /></span>
-                <span draggable><FontAwesomeIcon icon={faMinus} /></span>
+                <span onClick={()=>props.decreaseCart(props.index)} draggable><FontAwesomeIcon icon={faMinus} /></span>
             </div>
         </div>
     );
