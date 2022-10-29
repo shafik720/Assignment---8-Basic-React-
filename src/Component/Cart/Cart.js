@@ -54,7 +54,7 @@ const Cart = (props) => {
     }
 
     
-    
+    console.log(cart)
     
     return (
         <div className="cart-div">
@@ -74,6 +74,7 @@ const Cart = (props) => {
                 <p>Total Price : ${totalPrice} </p>
                 <p>Tax : ${tax}</p>
                 <p>Shipping Charge : ${shippingFee}</p>
+                <p>( Shipping is <span style={{color:'blue', fontWeight:'600'}}>Free</span> for Order more Than <span style={{color:'blue'}}>8000/-</span>) </p>
                 <h2>Grand Total : ${grandTotal} </h2>
             </div>
             <div className="random-chooser">
