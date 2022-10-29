@@ -57,6 +57,7 @@ const Cart = (props) => {
                 <div className="modal">
                     <div className="modal-body">                        
                     </div>
+                    <button>Choose Again</button>
                     <div className="cross-icon">
                         <FontAwesomeIcon icon={faXmark} />
                     </div>
