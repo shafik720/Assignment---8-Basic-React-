@@ -12,7 +12,7 @@ const Header = () => {
                     <span className="icon"><FontAwesomeIcon icon={faDragon} /></span>
                     <h2>Dragon's Ride</h2>
                 </div>
-                <div className="right-side">
+                <div className="right-sides">
                     <a href="/home">Home</a>
                     <a href="/home">About</a>
                     <a href="/home">Contact</a>

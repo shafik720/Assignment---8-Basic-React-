@@ -25,6 +25,11 @@
 
 
 @media only screen and (max-width:680px){
+    .greetings{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
     .body-div{
         display: flex;
         flex-direction: column;
@@ -34,8 +39,12 @@
     .left-side{
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        width: 100%;
+        /* gap: 20px; */
+        width: 95%;
         margin: auto;
+        order: 2;
+    }
+    .right-side{
+        order: 0;
     }
 }

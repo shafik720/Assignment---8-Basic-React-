@@ -35,14 +35,14 @@
     color: white;
 }
 
-.right-side a{
+.right-sides a{
     text-decoration: none;
     color: white;
     margin: 0 15px;
     font-weight: 600;
     font-size: 18px;
 }
-.right-side a:hover{
+.right-sides a:hover{
     color: orangered;
 }
 
@@ -57,7 +57,7 @@
         width: 100%;
         
     }
-    .right-side{
+    .right-sides{
         display: none;
     }
 }
