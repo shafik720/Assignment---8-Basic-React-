@@ -54,7 +54,6 @@ const Cart = (props) => {
     }
 
     
-    console.log(cart)
     
     return (
         <div className="cart-div">

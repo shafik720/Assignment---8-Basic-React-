@@ -99,3 +99,20 @@
 .modal-body img{
     width: 286px;
 }
+
+
+@media only screen and (max-width:680px){
+    .modal{
+        padding: 50px 20px;
+    }
+    .modal button{
+        width: 90%;
+    }
+    .modal-body{
+        margin: 10px;
+        width: 90%;
+    }
+    .modal-body img{
+        width: 100%;
+    }
+}
