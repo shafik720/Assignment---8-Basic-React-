@@ -36,7 +36,7 @@ const Cart = (props) => {
         let modalParent = document.querySelector('.modal-parent');
         let modalBody = document.querySelector('.modal-body');
         modalBody.innerHTML = `
-            <h4>${randomized.name}</h4> 
+            <h2>${randomized.name}</h2> 
             <img src="${randomized.img}" alt=""/> 
         `;
 
@@ -54,8 +54,7 @@ const Cart = (props) => {
         <div className="cart-div">
             <div className="modal-parent">
                 <div className="modal">
-                    <div className="modal-body">
-                        
+                    <div className="modal-body">                        
                     </div>
                     <div className="cross-icon">
                         <FontAwesomeIcon icon={faXmark} />
