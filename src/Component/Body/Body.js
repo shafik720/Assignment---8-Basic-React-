@@ -47,7 +47,7 @@ const Body = () => {
         }
     },[products, added, decreased])
 
-    
+    // console.log(products);
 
     return (
         <div className="body-div">
@@ -65,6 +65,7 @@ const Body = () => {
                 cart={cart}
                 addToCart = {addToCart}
                 decreaseCart = {decreaseCart}
+                products = {products}
                 ></Cart>
             </div>
             
