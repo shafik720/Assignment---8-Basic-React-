@@ -78,7 +78,7 @@ const Cart = (props) => {
             </div>
             <div className="random-chooser">
                 <button onClick={openModal}>Choose 1 For Me</button>
-                <button onClick={()=>props.deleteAll}>Choose Again</button>
+                <button onClick={props.deleteAll}>Choose Again</button>
             </div>
             <div className="show-div">
                 {

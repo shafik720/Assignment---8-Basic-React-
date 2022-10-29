@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { addToDb, decreaseDb, getCartValue } from '../../Utilites/storage';
+import { addToDb, decreaseDb, getCartValue, removeAll } from '../../Utilites/storage';
 import Cart from '../Cart/Cart';
 import Products from '../Products/Products';
 import './Body.css';
@@ -50,7 +50,9 @@ const Body = () => {
     },[products, added, decreased])
 
     function deleteAll(){
-        console.log("clicked");
+        let newCart = [];
+        removeAll();
+        setCart(newCart);
     }
 
     return (

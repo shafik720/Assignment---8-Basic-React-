@@ -26,10 +26,15 @@ function decreaseDb(id){
     localStorage.setItem('cycle-cart', JSON.stringify(cycleCart));
 }
 
+function removeAll(){
+    let cycleCart = JSON.parse(localStorage.getItem('cycle-cart') || "{}");
+    localStorage.removeItem('cycle-cart');
+}
 
 
 export{
     addToDb,
+    removeAll,
     decreaseDb,
     getCartValue
 }
