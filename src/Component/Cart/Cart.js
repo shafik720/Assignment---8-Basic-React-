@@ -36,11 +36,11 @@ const Cart = (props) => {
         let modalParent = document.querySelector('.modal-parent');
         let modalBody = document.querySelector('.modal-body');
         modalBody.innerHTML = `
+            <img src="${randomized.img}" alt=""/>
             <h2>${randomized.name}</h2> 
-            <h3>$${randomized.price}</h3>
-            <img src="${randomized.img}" alt=""/> 
+            <h3>$${randomized.price}</h3> 
         `;
-
+  
         let crossBtn = document.querySelector('.cross-icon');
         modalParent.classList.add('active');
         crossBtn.addEventListener('click',()=>{
