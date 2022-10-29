@@ -24,17 +24,24 @@ const Cart = (props) => {
     grandTotal += (totalPrice + tax + shippingFee);
 
     // working for random card selection
-    // let products = props.products;
     let random = Math.floor(Math.random() * cart.length);
     
-    // let box = [];
     console.log(cart[random]);
+
+    function openModal(){
+        document.querySelector('.modal-parent').classList.add('active');
+    }
 
     
     
     
     return (
         <div className="cart-div">
+            <div className="modal-parent">
+                <div className="modal">
+                    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, assumenda, omnis quibusdam provident maxime magnam nam facere culpa quisquam quam id ipsam! Harum modi perferendis corrupti, distinctio reiciendis odit natus, in repellendus quia maiores, aspernatur voluptatum est vel voluptates qui ad quas expedita provident omnis? Non deserunt nobis adipisci aspernatur.</h4>
+                </div>
+            </div>
             <div className="calculation-div">
                 <h2>Order summary : </h2>
                 <p>Total Added : {quantity} </p>
@@ -44,7 +51,7 @@ const Cart = (props) => {
                 <h2>Grand Total : ${grandTotal} </h2>
             </div>
             <div className="random-chooser">
-                <button>Choose 1 For Me</button>
+                <button onClick={openModal}>Choose 1 For Me</button>
             </div>
             <div className="show-div">
                 {
