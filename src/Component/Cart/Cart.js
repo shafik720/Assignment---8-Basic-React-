@@ -27,11 +27,17 @@ const Cart = (props) => {
 
     // working for random card selection
     let random = Math.floor(Math.random() * cart.length);
-    
+    let randomized = cart[random];
     // console.log(cart[random]);
 
     function openModal(){
         let modalParent = document.querySelector('.modal-parent');
+        let modalBody = document.querySelector('.modal-body');
+        modalBody.innerHTML = `
+            <h4>${randomized.name}</h4> 
+            <img src="${randomized.img}" alt=""/> 
+        `;
+
         let crossBtn = document.querySelector('.cross-icon');
         modalParent.classList.add('active');
         crossBtn.addEventListener('click',()=>{
@@ -46,8 +52,8 @@ const Cart = (props) => {
         <div className="cart-div">
             <div className="modal-parent">
                 <div className="modal">
-                    <div className="">
-                        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, assumenda, omnis quibusdam provident maxime magnam nam facere culpa quisquam quam id ipsam! Harum modi perferendis corrupti, distinctio reiciendis odit natus, in repellendus quia maiores, aspernatur voluptatum est vel voluptates qui ad quas expedita provident omnis? Non deserunt nobis adipisci aspernatur.</h4>  
+                    <div className="modal-body">
+                        
                     </div>
                     <div className="cross-icon">
                         <FontAwesomeIcon icon={faXmark} />

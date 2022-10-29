@@ -48,6 +48,7 @@
 }
 
 
+/* -------------------------------- Work on modal ---------------------- */
 .cross-icon{
     position: absolute;
     top: 10px;
@@ -55,4 +56,7 @@
     font-size: 25px;
     color: darkred;
     cursor: pointer;
+}
+.modal-body img{
+    width: 286px;
 }
