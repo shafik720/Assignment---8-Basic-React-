@@ -49,7 +49,9 @@ const Body = () => {
         }
     },[products, added, decreased])
 
-    // console.log(products);
+    function deleteAll(){
+        console.log("clicked");
+    }
 
     return (
         <div className="">
@@ -74,6 +76,7 @@ const Body = () => {
                     addToCart = {addToCart}
                     decreaseCart = {decreaseCart}
                     products = {products}
+                    deleteAll = {deleteAll}
                     ></Cart>
                 </div>
             </div>
