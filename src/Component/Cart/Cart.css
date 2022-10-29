@@ -44,4 +44,15 @@
     width: 80%;
     padding: 20px 25px;
     border-radius: 5px;
+    position: relative;
+}
+
+
+.cross-icon{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    color: darkred;
+    cursor: pointer;
 }

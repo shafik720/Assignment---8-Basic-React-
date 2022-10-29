@@ -1,6 +1,8 @@
 import React from 'react';
 import CartCard from '../CartCad/CartCard';
-import './Cart.css'
+import './Cart.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Cart = (props) => {
     let cart = props.cart;
@@ -26,10 +28,15 @@ const Cart = (props) => {
     // working for random card selection
     let random = Math.floor(Math.random() * cart.length);
     
-    console.log(cart[random]);
+    // console.log(cart[random]);
 
     function openModal(){
-        document.querySelector('.modal-parent').classList.add('active');
+        let modalParent = document.querySelector('.modal-parent');
+        let crossBtn = document.querySelector('.cross-icon');
+        modalParent.classList.add('active');
+        crossBtn.addEventListener('click',()=>{
+            modalParent.classList.remove('active');
+        })
     }
 
     
@@ -39,7 +46,12 @@ const Cart = (props) => {
         <div className="cart-div">
             <div className="modal-parent">
                 <div className="modal">
-                    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, assumenda, omnis quibusdam provident maxime magnam nam facere culpa quisquam quam id ipsam! Harum modi perferendis corrupti, distinctio reiciendis odit natus, in repellendus quia maiores, aspernatur voluptatum est vel voluptates qui ad quas expedita provident omnis? Non deserunt nobis adipisci aspernatur.</h4>
+                    <div className="">
+                        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, assumenda, omnis quibusdam provident maxime magnam nam facere culpa quisquam quam id ipsam! Harum modi perferendis corrupti, distinctio reiciendis odit natus, in repellendus quia maiores, aspernatur voluptatum est vel voluptates qui ad quas expedita provident omnis? Non deserunt nobis adipisci aspernatur.</h4>  
+                    </div>
+                    <div className="cross-icon">
+                        <FontAwesomeIcon icon={faXmark} />
+                    </div>
                 </div>
             </div>
             <div className="calculation-div">
